@@ -75,7 +75,7 @@ const player = new Fighter({
   },
   attackBox: {
     offset: { x: 80, y: 40 },
-    width: 120,
+    width: 180,
     height: 50,
   },
 });
@@ -129,8 +129,8 @@ const enemy = new Fighter({
     },
   },
   attackBox: {
-    offset: { x: -130, y: 40 },
-    width: 120,
+    offset: { x: -170, y: 45 },
+    width: 200,
     height: 50,
   },
 });
@@ -174,10 +174,10 @@ function animate() {
   // player Movement
 
   if (Keys.a.pressed && player.lastKey === "a") {
-    player.velocity.x = -8;
+    player.velocity.x = -6;
     player.switchSprite("run");
   } else if (Keys.d.pressed && player.lastKey === "d") {
-    player.velocity.x = 5;
+    player.velocity.x = 8;
     player.switchSprite("run");
   } else {
     player.switchSprite("idle");
@@ -195,7 +195,7 @@ function animate() {
     enemy.velocity.x = -8;
     enemy.switchSprite("run");
   } else if (Keys.num6.pressed && enemy.lastKey === "6") {
-    enemy.velocity.x = 5;
+    enemy.velocity.x = 6;
     enemy.switchSprite("run");
   } else {
     enemy.switchSprite("idle");
