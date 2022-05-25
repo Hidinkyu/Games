@@ -22,7 +22,7 @@ function whoWins({ player, enemy, timerID }) {
   }
 }
 
-let timer = 60;
+let timer = 10;
 let timerID;
 
 function decreaseTimer() {
