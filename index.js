@@ -191,10 +191,10 @@ function animate() {
   }
 
   // enemy Movement
-  if (Keys.num4.pressed && enemy.lastKey === ";") {
+  if (Keys.num4.pressed && enemy.lastKey === "k") {
     enemy.velocity.x = -8;
     enemy.switchSprite("run");
-  } else if (Keys.num6.pressed && enemy.lastKey === "'") {
+  } else if (Keys.num6.pressed && enemy.lastKey === "l") {
     enemy.velocity.x = 6;
     enemy.switchSprite("run");
   } else {
